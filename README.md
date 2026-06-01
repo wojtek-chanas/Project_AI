@@ -1,7 +1,5 @@
 # Sentiment Analysis System
 ## Customer Review Sentiment Analysis Tool
-**Course:** DLBDSEAIS02 — Project: Artificial Intelligence  
-**Task:** Task 2 — Sentiment Analysis of Customer Reviews
 
 ---
 
@@ -37,7 +35,8 @@ pip install transformers fastapi uvicorn streamlit sqlalchemy pandas requests tq
 
 ## Running the System
 
-The system requires **two terminal windows** running simultaneously.
+The system requires **two terminal windows** running simultaneously. 
+**The third terminal window** is optional to emulate incoming real-time data (**recommended**).
 
 ### Step 1 — Navigate to the project directory
 Open both terminals and run:
@@ -90,22 +89,6 @@ Interactive API documentation (Swagger UI) is available at **http://localhost:80
 | `/export-training-data` | GET | Export verified reviews to CSV for fine-tuning |
 | `/health` | GET | API health check |
 
-### Example: Classify a review
-```bash
-curl -X POST http://localhost:8000/predict \
-  -H "Content-Type: application/json" \
-  -d '{"text": "This product is absolutely fantastic!"}'
-```
-
-Response:
-```json
-{
-  "text": "This product is absolutely fantastic!",
-  "sentiment": "positive",
-  "stars": "5 stars",
-  "confidence": 0.9471
-}
-```
 
 ---
 
@@ -148,12 +131,8 @@ Project AI/
 ├── dashboard.py              # Streamlit analyst dashboard
 ├── reviews.db                # SQLite database (created on first run)
 ├── training_data_export.csv  # Export of verified labels (generated on demand)
+├── simulate_reviews.py       # Pulls random reviews from Amazon Products Reviews dataset and emulates incoming data
+├── AmazonProductReviews.csv  # Amazon Products Reviews dataset (from Kaggle)
 ├── README.md                 # This file
 └── Project AI.ipynb          # Development notebook
 ```
-
----
-
-## GitHub
-
-Repository: [Insert GitHub link here]
