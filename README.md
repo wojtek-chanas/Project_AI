@@ -42,7 +42,7 @@ The system requires **two terminal windows** running simultaneously.
 ### Step 1 — Navigate to the project directory
 Open both terminals and run:
 ```bash
-cd "C:\Users\Gebruiker\Project AI"
+cd "***directory path***"
 ```
 
 ### Step 2 — Start the API server (Terminal 1)
@@ -66,6 +66,16 @@ streamlit run dashboard.py
 The dashboard opens automatically at **http://localhost:8501**
 
 ---
+
+### Step 4 — Start the emulator script (Terminal 3)
+```bash
+python simulate_reviews.py
+```
+
+The script pulls random reviews from the dataset and sends them via API to emulate real-time incoming data.
+
+---
+
 
 ## API Reference
 
