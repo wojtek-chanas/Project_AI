@@ -15,7 +15,7 @@ import time
 import random
 
 API_URL = "http://localhost:8000"
-DATASET_PATH = r'C:\Users\Gebruiker\AmazonProductReviews.csv'
+DATASET_PATH = 'AmazonProductReviews.csv'
 MIN_INTERVAL = 1   # seconds
 MAX_INTERVAL = 10  # seconds
 
