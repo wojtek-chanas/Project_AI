@@ -36,7 +36,7 @@ pip install transformers fastapi uvicorn streamlit sqlalchemy pandas requests tq
 ## Running the System
 
 The system requires **two terminal windows** running simultaneously. 
-**The third terminal window** is optional to emulate incoming real-time data (**recommended**).
+> The **third** terminal window is optional to emulate incoming real-time data (**recommended**).
 
 ### Step 1 — Navigate to the project directory
 Open both terminals and run:
